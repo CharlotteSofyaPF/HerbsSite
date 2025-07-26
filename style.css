@@ -1,11 +1,29 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
 body, html{
     padding: 0;
     margin: 0;
 }
 
+body{
+    font-family: "Open Sans";
+}
+
 .container{
     width: 1110px;
     margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .headernav{
@@ -13,6 +31,43 @@ body, html{
 }
 
 .flexcontainer{
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topmenu{
+    flex-grow: 1;
+    margin: 0 93px;
+}
+
+.topmenu>ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.topmenu li{
+    margin: 0 32px;
+}
+
+.topmenu a{
+    color:white;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 7px;
+}
+.topmenu a:hover{
+    color: #BAE249;
+}
+
+.topmenu a:focus{
+    outline: solid 1px #83A440;
+}
+
+.topmenu a:active{
+    color: #688B05;
 }
