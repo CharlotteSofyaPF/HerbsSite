@@ -10,6 +10,11 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "Cormorant";
+    src: url("fonts/Cormorant-Bold.ttf");
+}
+
 body, html{
     padding: 0;
     margin: 0;
@@ -112,4 +117,89 @@ body{
 
 .control_button:active{
     stroke: #688B05;
+}
+
+header{
+    background-image: url(images/1_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner{
+    height: 490px;
+    background-color: rgba(29,47,48,0.7);
+}
+
+.main_title{
+    margin: 115px 0 16px 0;
+    color: white;
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: Cormorant;
+    width: 688px;
+}
+
+.description{
+    color: white;
+    width: 635px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+.invent{
+    color: #BAE249;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 2px 7px;
+    width: fit-content;
+    margin-left: -7px;
+}
+
+.invent:hover{
+    color: #91AC46;
+    
+}
+
+.invent>svg{
+    transition: 0.3s;
+}
+
+.invent:hover>svg{
+    transform: translate(5px, 0) scale(1.25, 1)
+}
+
+.invent>svg>path{
+    transition: 0.3s;
+}
+
+.invent:hover>svg>path{
+    fill: #91AC46;
+}
+
+.invent:focus{
+    outline: solid 1px #83A440;
+}
+
+.invent:active{
+    color:#688B05;
+}
+
+.invent:active>svg>path{
+    fill:#688B05;
+}
+
+.invent.unactive{
+    color:#899D9D;
+}
+
+.invent.unactive>svg>path{
+    fill: #899D9D;
 }
