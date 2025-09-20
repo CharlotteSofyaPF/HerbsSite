@@ -223,6 +223,7 @@ header{
     background-color: #0B1919;
     flex-shrink: 0;
     padding: 30px 16px;
+    position: relative;
 }
 
 .card_title{
@@ -256,4 +257,19 @@ header{
 .card_link:hover{
     background-color: #BAE249;
     color: #0B1919;
+}
+
+.something{
+    color: #899D9D;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+    border: solid 1px #899D9D;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    text-align: center;
 }
