@@ -16,6 +16,13 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "Cormorant";
+    src: url("fonts/Cormorant-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
 body, html{
     padding: 0;
     margin: 0;
@@ -327,4 +334,39 @@ header{
 
 .scroll_right:hover svg{
     transform: translate(2px, 0);
+}
+
+.SectionTitle{
+    font-family: "Cormorant", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    color: white;
+}
+
+.artefacts{
+    display: flex;
+    gap: 19px;
+    height: 493px;
+}
+
+.artleft{
+    background-color: #0B1919;
+    width: 825px;
+    flex-shrink: 0;
+
+}
+
+.artright{
+    background-color: #BAE249;
+    padding: 16px;
+}
+
+.artright>h3{
+    font-family: "Cormorant", sans-serif;
+    font-weight: 700;
+    color: #1D2F30;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
 }
