@@ -354,6 +354,7 @@ header{
     background-color: #0B1919;
     width: 825px;
     flex-shrink: 0;
+    position: relative;
 
 }
 
@@ -421,4 +422,8 @@ header{
 
 .DesLink:focus{
     outline: solid 1px #83A440;
+}
+
+.artleftimg{
+    position: absolute;
 }
